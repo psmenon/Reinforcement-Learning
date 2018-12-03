@@ -49,7 +49,7 @@ class SumTree:
                 break
                 
             else:
-                if v <= self.tree[left]:
+                if v <= self.tree[left] or self.tree[right] == 0.0:
                     parent = left
                 else:
                     v -= self.tree[left]
